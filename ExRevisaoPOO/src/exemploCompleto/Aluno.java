@@ -1,9 +1,12 @@
 package exemploCompleto;
 
+import java.util.Random;
+
 public class Aluno {
     private String nome;
     private int idade;
     private Curso curso;
+    Random random = new Random();
     
     public Aluno(String nome, int idade, Curso curso) {
         this.nome = nome;
@@ -12,13 +15,19 @@ public class Aluno {
     }
 
     public void exibirDados(){
-
+        System.out.println("Nome: " + nome + ", Idade: " + idade + ", Curso: " + curso.getNome() + "\n");
     }
 
     public void estudar(){
+        int valor = random.nextInt(2);
+
+        if(valor < 1) {
+            System.out.println("O aluno " + nome + " esta estudando!!");
+        } else {
+            System.out.println("O aluno " + nome + " nao esta estudando!!");
+        }
 
     }
-
     
     public Curso getCurso() {
         return curso;
@@ -40,5 +49,4 @@ public class Aluno {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-
 }

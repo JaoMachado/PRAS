@@ -1,10 +1,10 @@
 package exemploCompleto;
 
 public class Curso {
-    private String nome;
-    private int duracaoMeses;
-    private Professor professor;
-    private Biblioteca biblioteca;
+    protected String nome;
+    protected int duracaoMeses;
+    protected Professor professor;
+    protected Biblioteca biblioteca;
 
     public Curso(String nome, int duracaoMeses, Professor professor, Biblioteca biblioteca) {
         this.nome = nome;
@@ -14,11 +14,11 @@ public class Curso {
     }
 
     public void iniciarAulas(){
-
+        System.out.println("Curso " + nome + " iniciado com duracao de " + duracaoMeses + " meses." + "\n");
     }
 
     public void ExibirInformacoes(){
-
+        System.out.println("Curso: " + nome + ", Duracao: " + duracaoMeses + " meses, Professor: " + professor.getNomeProfessor() + "\nBiblioteca associada: " + biblioteca.getNome() + "\n");
     }
 
     public String getNome() {

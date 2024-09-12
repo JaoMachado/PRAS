@@ -13,7 +13,7 @@ public class CursoOnline extends Curso {
     }
 
     public void ExibirInformacoes(){
-        
+        System.out.println("Curso: " + getNome() + ", Duracao: " + getDuracaoMeses() + " meses, Professor: " + professor.getNomeProfessor() + "\nPlataforma do curso online: " + getPlataforma() + "\n");
     }
 
     public String getPlataforma() {
@@ -22,6 +22,5 @@ public class CursoOnline extends Curso {
     public void setPlataforma(String plataforma) {
         this.plataforma = plataforma;
     }
-
 
 }

@@ -20,7 +20,7 @@ public class Professor {
     }
 
     public void exibirPerfil(){
-        
+        System.out.println("Professor: " + nomeProfessor + ", Especialidade: " + especialidade + ", Anos de experiencia: " + anosExperiencia + "\n");
     }
 
     public int getAnosExperiencia() {

@@ -7,5 +7,11 @@ public class Main {
         Curso curso = new Curso("Engenharia de Software", 24, professor,  biblioteca);
         CursoOnline cursoOnline = new CursoOnline("Programacao Java", 6, professor, biblioteca, "Plataforma Moodle IFSP");
         Aluno aluno = new Aluno("Maria", 20, curso);
+
+        aluno.exibirDados();
+        curso.ExibirInformacoes();
+        cursoOnline.iniciarAulas();
+        cursoOnline.ExibirInformacoes();
+        professor.exibirPerfil();
     }
 }
