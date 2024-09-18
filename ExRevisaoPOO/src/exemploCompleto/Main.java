@@ -9,9 +9,9 @@ public class Main {
         Aluno aluno = new Aluno("Maria", 20, curso);
 
         aluno.exibirDados();
-        curso.ExibirInformacoes();
+        curso.exibirInformacoes();
         cursoOnline.iniciarAulas();
-        cursoOnline.ExibirInformacoes();
+        cursoOnline.exibirInformacoes();
         professor.exibirPerfil();
     }
 }

@@ -8,12 +8,8 @@ public class CursoOnline extends Curso {
         this.plataforma = plataforma;
     }
 
-    public CursoOnline(String nome, int duracaoMeses, Professor professor, Biblioteca biblioteca) {
-        super(nome, duracaoMeses, professor, biblioteca);
-    }
-
-    public void ExibirInformacoes(){
-        System.out.println("Curso: " + getNome() + ", Duracao: " + getDuracaoMeses() + " meses, Professor: " + professor.getNomeProfessor() + "\nPlataforma do curso online: " + getPlataforma() + "\n");
+    public void exibirInformacoes(){
+        System.out.println("Curso: " + getNome() + ", Duracao: " + getDuracaoMeses() + " meses, Professor: " + professor.getNome() + "\nPlataforma do curso online: " + getPlataforma() + "\n");
     }
 
     public String getPlataforma() {

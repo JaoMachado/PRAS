@@ -19,12 +19,12 @@ public class Aluno {
     }
 
     public void estudar(){
-        int valor = random.nextInt(2);
+        int valor = random.nextInt(10);
 
-        if(valor < 1) {
-            System.out.println("O aluno " + nome + " esta estudando!!");
+        if(valor % 2 == 0) {
+            System.out.println("O aluno(a) " + nome + " esta estudando!!");
         } else {
-            System.out.println("O aluno " + nome + " nao esta estudando!!");
+            System.out.println("O aluno(a) " + nome + " nao esta estudando!!");
         }
 
     }

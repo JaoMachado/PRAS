@@ -17,8 +17,8 @@ public class Curso {
         System.out.println("Curso " + nome + " iniciado com duracao de " + duracaoMeses + " meses." + "\n");
     }
 
-    public void ExibirInformacoes(){
-        System.out.println("Curso: " + nome + ", Duracao: " + duracaoMeses + " meses, Professor: " + professor.getNomeProfessor() + "\nBiblioteca associada: " + biblioteca.getNome() + "\n");
+    public void exibirInformacoes(){
+        System.out.println("Curso: " + nome + ", Duracao: " + duracaoMeses + " meses, Professor: " + professor.getNome() + "\nBiblioteca associada: " + biblioteca.getNome() + "\n");
     }
 
     public String getNome() {

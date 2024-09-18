@@ -1,26 +1,36 @@
 package exemploCompleto;
 
+import java.util.Random;
+
 public class Professor {
-    private String nomeProfessor;
+    private String nome;
     private String especialidade;
     private int anosExperiencia;
+    Random random = new Random();
     
-    public Professor(String nomeProfessor, String especialidade, int anosExperiencia) {
-        this.nomeProfessor = nomeProfessor;
+    public Professor(String nome, String especialidade, int anosExperiencia) {
+        this.nome = nome;
         this.especialidade = especialidade;
         this.anosExperiencia = anosExperiencia;
     }
 
     public void ensinar(){
+        int valor = random.nextInt(10);
 
+        if(valor % 2 == 0) {
+            System.out.println("O professor(a) " + nome + " esta ensinando!!");
+        } else {
+            System.out.println("O professor(a) " + nome + " nao esta ensinando!!");
+        }
     }
 
-    public int avaliarAluno(Aluno aluno){
-        return 1;
+    public void avaliarAluno(Aluno aluno){
+        int valor = random.nextInt(10);
+        System.out.println("O aluno(a) " + aluno.getNome() + " recebe nota: " + valor + ".");
     }
 
     public void exibirPerfil(){
-        System.out.println("Professor: " + nomeProfessor + ", Especialidade: " + especialidade + ", Anos de experiencia: " + anosExperiencia + "\n");
+        System.out.println("Professor: " + nome + ", Especialidade: " + especialidade + ", Anos de experiencia: " + anosExperiencia + "\n");
     }
 
     public int getAnosExperiencia() {
@@ -30,11 +40,11 @@ public class Professor {
         this.anosExperiencia = anosExperiencia;
     }
 
-    public String getNomeProfessor() {
-        return nomeProfessor;
+    public String getNome() {
+        return nome;
     }
-    public void setNomeProfessor(String nomeProfessor) {
-        this.nomeProfessor = nomeProfessor;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getEspecialidade() {
